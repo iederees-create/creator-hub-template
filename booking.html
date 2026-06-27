@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Hub Pro | Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 80px; background: #FFF5F7;">
+
+  <!-- Layout Mount -->
+  <div id="creator-header-mount"></div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact" style="min-height: calc(100vh - 80px);">
+    <div class="contact-content">
+      <h2>Acquisition Gateway</h2>
+      <p style="color:var(--text-muted); margin-bottom: 24px;">Looking to partner on a campaign or feature? Drop your details into the portal and my management team will process the request.</p>
+      <p style="font-weight: 600; color:var(--dark);">Direct Line:<br><a href="mailto:collab@creatorhub.co.za" style="color:var(--primary); text-decoration:none;">collab@creatorhub.co.za</a></p>
+    </div>
+    <div class="contact-form">
+      <form id="booking-form">
+        <div class="form-group">
+          <label>Brand / Agency Name</label>
+          <input type="text" class="form-control" placeholder="e.g. NextGenWebs" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" class="form-control" placeholder="hello@brand.com" required>
+        </div>
+        <div class="form-group">
+          <label>Budget Range (ZAR)</label>
+          <select class="form-control" required style="appearance: none;">
+            <option value="" disabled selected>Select an option</option>
+            <option>R5,000 - R15,000</option>
+            <option>R15,000 - R50,000</option>
+            <option>R50,000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Campaign Details</label>
+          <textarea class="form-control" placeholder="Tell me about the campaign..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Proposal</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Layout Mount -->
+  <div id="creator-footer-mount"></div>
+
+  <script src="creator-layout.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
